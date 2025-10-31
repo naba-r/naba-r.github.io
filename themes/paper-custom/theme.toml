@@ -1,0 +1,5 @@
+name = "Paper Custom RTL"
+license = "MIT"
+description = "Custom RTL Hugo theme with sidebar"
+tags = ["blog", "minimal", "rtl", "arabic"]
+min_version = "0.112.0"

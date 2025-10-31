@@ -1,0 +1,23 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<div class="posts-list">
+  {{ range where .Site.RegularPages "Type" "posts" }}
+  <article class="post-item">
+    <h2 class="post-item-title">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    {{ if .Summary }}
+    <div class="post-item-summary">{{ .Summary }}</div>
+    {{ end }}
+    {{ if .Params.tags }}
+    <div class="post-item-tags">
+      {{ range .Params.tags }}
+      <a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}

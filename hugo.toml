@@ -1,0 +1,21 @@
+baseURL = "https://naba-r.github.io/"
+languageCode = "ar"
+title = "نَــبَــرَ"
+theme = "paper-custom"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  direction = "rtl"
+  disableHLJS = false
+
+[permalinks]
+  posts = "/:title/"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "المقالات"
+    url = "/posts/"
+    weight = 1

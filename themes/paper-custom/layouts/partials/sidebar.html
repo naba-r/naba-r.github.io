@@ -1,0 +1,22 @@
+<aside class="sidebar">
+  <div class="sidebar-widget">
+    <h3 class="widget-title">الوسوم</h3>
+    <div class="tags-cloud">
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <a href="{{ "/tags/" | absURL }}{{ $name | urlize }}/" class="tag-cloud-item">
+        {{ $name }} <span class="tag-count">({{ len $taxonomy }})</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="sidebar-widget">
+    <h3 class="widget-title">المقالات الأخيرة</h3>
+    <ul class="recent-posts">
+      {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+      <li class="recent-post-item">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</aside>

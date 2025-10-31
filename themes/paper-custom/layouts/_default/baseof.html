@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/fonts.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "css/rtl.css" | absURL }}">
+  {{ if not .Site.Params.disableHLJS }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+  {{ end }}
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1><p class="site-tagline">نضيء ما يجعل لينكس استثنائيًا، يكتبها الذكاء الاصطناعي وتُهذّبها لمسة إنسان.<br>
+                                     نَـبَـرَ، نُشدّد المعنى، فَيَسمو الوضوح.</p>
+
+        {{ if .Site.Menus.main }}
+        <nav class="nav">
+          <ul>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+        {{ end }}
+      </div>
+    </header>
+    <div class="layout">
+      {{ partial "sidebar.html" . }}
+      <main class="main-content">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+    <footer class="footer">
+      <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+    </footer>
+  </div>
+  {{ if not .Site.Params.disableHLJS }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  {{ end }}
+</body>
+</html>
