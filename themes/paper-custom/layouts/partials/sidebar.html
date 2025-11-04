@@ -12,7 +12,7 @@
   <div class="sidebar-widget">
     <h3 class="widget-title">المقالات الأخيرة</h3>
     <ul class="recent-posts">
-      {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+      {{ range first 5 (where .Site.RegularPages "Type" "posts").ByDate.Reverse }}
       <li class="recent-post-item">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
       </li>

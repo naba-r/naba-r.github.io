@@ -12,7 +12,7 @@
     {{ end }}
     {{ if .Params.tags }}
     <div class="post-item-tags">
-      {{ range .Params.tags }}
+      {{ range .Pages.ByDate.Reverse }}
       <a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
       {{ end }}
     </div>
