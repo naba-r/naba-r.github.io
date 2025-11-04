@@ -2,7 +2,7 @@
 
 {{ define "main" }}
 <div class="posts-list">
-  {{ range where .Site.RegularPages "Type" "posts" }}
+  {{ range (where .Site.RegularPages "Type" "posts").ByDate.Reverse }}
   <article class="post-item">
     <h2 class="post-item-title">
       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -12,7 +12,7 @@
     {{ end }}
     {{ if .Params.tags }}
     <div class="post-item-tags">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ range .Params.tags }}
       <a href="{{ "/tags/" | absURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
       {{ end }}
     </div>
@@ -21,3 +21,4 @@
   {{ end }}
 </div>
 {{ end }}
+
