@@ -2,7 +2,7 @@
 title: ""
 tags: []
 draft: true
-date:
+date: 2026-10-01
 ---
 
 
