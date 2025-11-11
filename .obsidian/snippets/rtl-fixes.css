@@ -1,0 +1,20 @@
+/* Force RTL in preview and editor */
+.markdown-preview-view,
+.cm-editor .cm-scroller { direction: rtl; text-align: right; }
+
+/* Keep code blocks and tables LTR for readability */
+.markdown-preview-view pre code,
+.markdown-preview-view table,
+.cm-editor .cm-codeBlock,
+.cm-editor .cm-tableWrapper { direction: ltr; text-align: left; }
+
+/* Hide language label (e.g., 'bash') above code blocks – reading mode */
+.markdown-preview-view pre[class*="language-"]::before { content: ""; display: none !important; }
+
+/* Hide language label in Live Preview / editor (CodeMirror 6) */
+.cm-editor .code-block-flair,
+.cm-editor .cm-panel .codeblock-language { display: none !important; }
+
+/* Tighter spacing for Arabic lists */
+.markdown-preview-view ul { padding-inline-start: 1.2em; }
+.markdown-preview-view li { margin: 0.2em 0; }
