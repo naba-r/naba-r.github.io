@@ -1,0 +1,11 @@
+{
+  "fileDirections": {
+    "content/posts/_template-post 1.md": "auto"
+  },
+  "defaultDirection": "auto",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "preventRTLFrontmatter": false,
+  "statusBar": true
+}

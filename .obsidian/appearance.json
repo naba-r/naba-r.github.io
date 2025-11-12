@@ -1,6 +1,4 @@
 {
-  "cssTheme": "Primary",
-  "enabledCssSnippets": [
-    "rtl-fixes"
-  ]
+  "cssTheme": "Material Gruvbox",
+  "enabledCssSnippets": []
 }

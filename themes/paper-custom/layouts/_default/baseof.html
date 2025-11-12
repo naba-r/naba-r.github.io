@@ -36,7 +36,16 @@
       </main>
     </div>
     <footer class="footer">
-      <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+       <p>
+    &copy; {{ now.Year }} {{ .Site.Title }}
+    <a href="/index.xml" aria-label="RSS Feed" class="rss-link" title="RSS Feed" style="margin-left: 8px; vertical-align: middle;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="#F28C28" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.18" cy="17.82" r="2.18"/>
+        <path d="M4 10.56a9.44 9.44 0 0 1 9.44 9.44" stroke="#F28C28" stroke-width="2" fill="none"/>
+        <path d="M4 6a13.98 13.98 0 0 1 13.98 13.98" stroke="#F28C28" stroke-width="2" fill="none"/>
+      </svg>
+    </a>
+  </p>
     </footer>
   </div>
   {{ if not .Site.Params.disableHLJS }}

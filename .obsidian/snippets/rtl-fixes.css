@@ -1,20 +1,50 @@
-/* Force RTL in preview and editor */
-.markdown-preview-view,
-.cm-editor .cm-scroller { direction: rtl; text-align: right; }
+/* rtl-fixes.css — force RTL headings only, safe for Preview + Editor */
 
-/* Keep code blocks and tables LTR for readability */
-.markdown-preview-view pre code,
-.markdown-preview-view table,
-.cm-editor .cm-codeBlock,
-.cm-editor .cm-tableWrapper { direction: ltr; text-align: left; }
+/* Reading/Preview: cover both preview class names */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3,
+.markdown-reading-view h4,
+.markdown-reading-view h5,
+.markdown-reading-view h6 {
+  direction: rtl !important;
+  text-align: right !important;
+}
 
-/* Hide language label (e.g., 'bash') above code blocks – reading mode */
-.markdown-preview-view pre[class*="language-"]::before { content: ""; display: none !important; }
+/* Live Preview / Editor (CodeMirror 6): standard heading token */
+.cm-editor .cm-header {
+  direction: rtl !important;
+  text-align: right !important;
+}
 
-/* Hide language label in Live Preview / editor (CodeMirror 6) */
-.cm-editor .code-block-flair,
-.cm-editor .cm-panel .codeblock-language { display: none !important; }
+/* Keep inline code inside headings LTR */
+.markdown-preview-view h1 code,
+.markdown-preview-view h2 code,
+.markdown-preview-view h3 code,
+.markdown-preview-view h4 code,
+.markdown-preview-view h5 code,
+.markdown-preview-view h6 code,
+.markdown-reading-view h1 code,
+.markdown-reading-view h2 code,
+.markdown-reading-view h3 code,
+.markdown-reading-view h4 code,
+.markdown-reading-view h5 code,
+.markdown-reading-view h6 code,
+.cm-editor .cm-header code {
+  direction: ltr !important;
+  text-align: left !important;
+}
 
-/* Tighter spacing for Arabic lists */
-.markdown-preview-view ul { padding-inline-start: 1.2em; }
-.markdown-preview-view li { margin: 0.2em 0; }
+/* Optional: Arabic list spacing in preview */
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-reading-view ul,
+.markdown-reading-view ol { padding-inline-start: 1.2em; }
+.markdown-preview-view li,
+.markdown-reading-view li { margin: 0.2em 0; }
