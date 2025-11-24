@@ -3,7 +3,7 @@ tags:
   - شروحات
   - برامح
   - لينكس
-draft: true
+draft: false
 date: 2025-11-24
 title: كيف يحميك Snapper من الكوارث؟ دليل المبتدئين لنظام ملفات Btrfs
 ---
