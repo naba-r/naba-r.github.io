@@ -200,21 +200,21 @@ TIMELINE_LIMIT_DAILY=7﻿
 
 `sudo snapper list`
 
-- عرض قائمة النسخ مع أرقامها ووصف مختصر.
+- عرض قائمة النسخ مع أرقامها ووصف مختصر description.
     
 
  
 
-`sudo snapper create --description "سبب النسخة"`
+`sudo snapper create --description "description"`
 
 - إنشاء نسخة يدوية قبل تغيير مهم.
     
 
  
 
-`sudo snapper delete <رقم_النسخة>`
+`sudo snapper delete <NO>`
 
-- حذف نسخة محددة وتفريغ المساحة التي تشغلها.
+- حذف نسخة محددة (رقم النسخة NO) وتفريغ المساحة التي تشغلها.
     
 
 ---
