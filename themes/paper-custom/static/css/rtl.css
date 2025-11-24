@@ -19,4 +19,9 @@ body {
 .post-content table th,
 .post-content table td {
   text-align: right;
+
+pre, code {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: plaintext !important;
 }
