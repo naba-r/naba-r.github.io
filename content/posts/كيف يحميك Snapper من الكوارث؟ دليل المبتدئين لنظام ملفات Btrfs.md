@@ -196,23 +196,23 @@ TIMELINE_LIMIT_DAILY=7﻿
 
  
 
-`sudo snapper list`
+sudo snapper list
 
-- عرض قائمة النسخ مع أرقامها ووصف مختصر description.
+- عرض قائمة النسخ مع أرقامها ووصف مختصر .استبدل النص بين علامتي التنصيص بوصف خاص بك.
     
 
  
 
-`sudo snapper create -d "Your descriptive text here"`
+sudo snapper create -d 'My custom snapshot before major update'
 
 - إنشاء نسخة يدوية قبل تغيير مهم.
     
 
  
 
-`sudo snapper delete <snapshot_number>`
+sudo snapper delete <snapshot_number>
 
-- حذف نسخة محددة (رقم النسخة NO) وتفريغ المساحة التي تشغلها.
+- حذف نسخة محددة وتفريغ المساحة التي تشغلها (استبدل `<snapshot_number>` برقم النسخة الذي يظهر لك في أمر القائمة، مثلاً: 5) .
     
 
 ---
