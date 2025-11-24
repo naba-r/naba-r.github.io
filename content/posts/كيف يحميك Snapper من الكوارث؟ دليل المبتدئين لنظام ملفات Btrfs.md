@@ -203,14 +203,14 @@ TIMELINE_LIMIT_DAILY=7﻿
 
  
 
-`sudo snapper create -d *description*`
+`sudo snapper create -d description`
 
 - إنشاء نسخة يدوية قبل تغيير مهم.
     
 
  
 
-`sudo snapper delete *NO*`
+`sudo snapper delete NO`
 
 - حذف نسخة محددة وتفريغ المساحة التي تشغلها (استبدل NO برقم النسخة الذي يظهر لك في أمر القائمة، مثلاً: 5) .
     
