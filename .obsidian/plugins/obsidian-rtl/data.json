@@ -1,7 +1,6 @@
 {
   "fileDirections": {
     "content/posts/حكاية التوزيعة من القلب إلى التفاصيل.md": "rtl",
-    "content/posts/Untitled.md": "rtl",
     "content/posts/كيف يحميك Snapper من الكوارث؟ دليل المبتدئين لنظام ملفات Btrfs.md": "auto"
   },
   "defaultDirection": "auto",
