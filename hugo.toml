@@ -19,3 +19,8 @@ theme = "paper-custom"
     name = "المقالات"
     url = "/posts/"
     weight = 1
+    
+[params.analytics]
+  [params.analytics.google]
+    id = "G-YHZ21Z5QQT"
+
