@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="rtl">
-<!-- naba-r GA4 PRODUCTION ONLY -->
-{{ if hugo.IsProduction }}
+<!-- naba-r GA4 LIVE -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHZ21Z5QQT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -9,10 +8,9 @@
   gtag('js', new Date());
   gtag('config', 'G-YHZ21Z5QQT');
 </script>
-{{ end }}
 <!-- END naba-r GA4 -->
 </head>
-<head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
