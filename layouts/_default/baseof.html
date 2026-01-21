@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" dir="rtl">
+<head>
 <!-- naba-r GA4 LIVE -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHZ21Z5QQT"></script>
 <script>
@@ -9,15 +10,13 @@
   gtag('config', 'G-YHZ21Z5QQT');
 </script>
 <!-- END naba-r GA4 -->
-</head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <link rel="stylesheet" href="{{ "css/fonts.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/rtl.css" | absURL }}">
-  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
   {{ if not .Site.Params.disableHLJS }}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
   {{ end }}

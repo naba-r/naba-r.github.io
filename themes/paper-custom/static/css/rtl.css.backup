@@ -1,0 +1,88 @@
+/* rtl.css - Full RTL Enhancements for paper-custom theme */
+/* Ready to copy into themes/paper-custom/static/css/rtl.css */
+
+/* 1. Main Body Direction */
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* 2. Lists (Bullets/Numbers indentation) */
+.post-content ul,
+.post-content ol {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+/* 3. Blockquotes (Quote lines on the right) */
+.post-content blockquote {
+  border-right: 4px solid var(--brand-color-light);
+  border-left: none;
+  padding-right: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* 4. Tables */
+.post-content table th,
+.post-content table td {
+  text-align: right;
+}
+
+/* ================================================= */
+/*  CODE BLOCK FIXES (Fixes 1/5 and ls -la issues)   */
+/* ================================================= */
+
+/* Inline Code (Code within text) */
+code {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: 'Courier New', monospace !important;
+  
+  /* Keeps 1/5 as 1/5 */
+  unicode-bidi: bidi-override !important; 
+}
+
+/* Code Blocks (Large multi-line boxes) */
+pre {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: 'Courier New', monospace !important;
+  
+  /* Isolates block from Arabic text flow */
+  unicode-bidi: isolate !important;
+}
+
+/* Reset for code inside pre */
+pre code {
+  unicode-bidi: normal !important; 
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+/* ================================================= */
+/*  FINAL FIX FOR HUGO CODE BLOCKS (BASH/SHELL)      */
+/* ================================================= */
+
+/* Hugo's highlight wrapper */
+.highlight {
+  direction: ltr !important;
+  text-align: left !important;
+  width: 100%;
+}
+
+/* pre inside highlight */
+.highlight pre {
+  direction: ltr !important;
+  text-align: left !important;
+  margin: 0;
+  width: 100%;
+  overflow-x: auto; /* Scrollbar for long lines */
+}
+
+/* Fix punctuation flip in Bash */
+.highlight span, 
+.highlight code {
+  unicode-bidi: isolate !important;
+}
+

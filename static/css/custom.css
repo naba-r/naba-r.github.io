@@ -1,18 +1,36 @@
-.arabic-post, 
-[lang="ar"], 
-[dir="rtl"],
-article[lang="ar"] {
+/* Arabic RTL Support */
+[lang="ar"], [dir="rtl"] {
   direction: rtl !important;
   text-align: right !important;
-  line-height: 1.8;
-  font-family: 'Noto Sans Arabic', 'Amiri', 'Traditional Arabic', serif;
+  line-height: 1.8em !important;
+  font-family: 'Noto Sans Arabic', Tahoma, Arial, serif !important;
 }
 
-.arabic-post h1, .arabic-post h2, .arabic-post h3 {
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4 {
   text-align: right !important;
 }
 
-.arabic-post table {
-  direction: rtl;
-  text-align: right;
+[lang="ar"] table {
+  direction: rtl !important;
+  text-align: right !important;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+[lang="ar"] table th,
+[lang="ar"] table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: right !important;
+}
+
+[lang="ar"] pre, [lang="ar"] code {
+  direction: ltr !important;
+  text-align: left !important;
+  font-family: 'Courier New', monospace !important;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
 }

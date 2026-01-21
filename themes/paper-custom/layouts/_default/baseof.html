@@ -4,9 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  
+  <!-- EMERGENCY RTL OVERRIDE - HIGHEST PRIORITY -->
+  <style>
+    /* FORCE RTL - Higher specificity than theme CSS */
+    html, body { 
+      direction: rtl !important; 
+      text-align: right !important; 
+    }
+    
+    /* GitHub-style text (status, branches, filenames) */
+    .status, .branch, pre, code, .filename {
+      direction: ltr !important;
+      text-align: left !important;
+      unicode-bidi: isolate !important;
+    }
+    
+    /* Lists */
+    .post-content ul, .post-content ol {
+      padding-right: 2rem !important;
+      padding-left: 0 !important;
+    }
+    
+    /* Blockquotes */
+    .post-content blockquote {
+      border-right: 4px solid #e67e00 !important;
+      border-left: none !important;
+      padding-right: 1.5rem !important;
+      padding-left: 1rem !important;
+    }
+  </style>
+  
   <link rel="stylesheet" href="{{ "css/fonts.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/rtl.css" | absURL }}">
+  
   {{ if not .Site.Params.disableHLJS }}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
   {{ end }}

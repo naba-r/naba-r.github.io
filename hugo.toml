@@ -9,6 +9,8 @@ theme = "paper-custom"
 [params]
   direction = "rtl"
   disableHLJS = false
+  customCSS = ["css/rtl.css"]
+
 
 [permalinks]
   posts = "/:title/"

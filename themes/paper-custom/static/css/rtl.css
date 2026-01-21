@@ -1,27 +1,51 @@
-body {
-  direction: rtl;
-  text-align: right;
-}
-
-.post-content ul,
-.post-content ol {
-  padding-right: 2rem;
-  padding-left: 0;
-}
-
-.post-content blockquote {
-  border-right: 4px solid var(--brand-color-light);
-  border-left: none;
-  padding-right: 1.5rem;
-  padding-left: 1rem;
-}
-
-.post-content table th,
-.post-content table td {
-  text-align: right;
-
-pre, code {
+/* EVERY code block type - BULLETPROOF */
+pre, code, 
+.highlight, 
+pre[class*="language-"], 
+code[class*="language-"],
+pre code.hljs,
+.chroma,
+div.highlight {
   direction: ltr !important;
   text-align: left !important;
-  unicode-bidi: plaintext !important;
+  unicode-bidi: isolate !important !important;
+  margin: 1rem 0 2rem 0 !important;
+  padding: 1.2rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  background: #f6f8fa !important;
+  border: 1px solid #e1e4e8 !important;
+  border-radius: 6px !important;
+  font-size: 0.9em !important;
+  line-height: 1.5 !important;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace !important;
+  white-space: pre !important;
+  box-sizing: border-box !important;
 }
+
+/* Inline code */
+code:not(pre code) {
+  direction: ltr !important;
+  unicode-bidi: bidi-override !important;
+}
+/* Inline code - LTR but same size as Arabic text */
+code {
+  direction: ltr !important;
+  unicode-bidi: bidi-override !important;
+  font-size: 1em !important;        /* Same size as body text */
+  font-weight: normal !important;   /* No bold */
+  background: rgba(0,0,0,0.05) !important;  /* Light bg only */
+  padding: 0.1em 0.3em !important;  /* Minimal padding */
+  border-radius: 3px !important;
+  line-height: 1.4 !important;      /* Matches Arabic line height */
+  font-family: 'Fira Code', monospace !important;
+  vertical-align: baseline !important;
+}
+
+/* Ensure paths like ~/MyBackup stay LTR and properly positioned */
+code path, code ~, code / {
+  direction: ltr !important;
+  unicode-bidi: bidi-override !important;
+}
+
