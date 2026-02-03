@@ -1,5 +1,8 @@
 {
   "rightToLeft": true,
   "showInlineTitle": true,
-  "propertiesInDocument": "hidden"
+  "propertiesInDocument": "hidden",
+  "readableLineLength": false,
+  "tabSize": 6,
+  "strictLineBreaks": false
 }

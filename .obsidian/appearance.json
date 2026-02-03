@@ -1,4 +1,9 @@
 {
   "cssTheme": "",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [],
+  "theme": "moonstone",
+  "accentColor": "#d2c465",
+  "textFontFamily": "Dubai,FiraCode Nerd Font",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono",
+  "baseFontSize": 18
 }
