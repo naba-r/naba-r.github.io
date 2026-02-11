@@ -5,7 +5,8 @@
     "content/posts/محطة الكتابة.md": "rtl",
     "content/posts/النافذة الأولى حكاية الإنسان الذي علّم لينكس أن يرى.md": "auto",
     "content/posts/اختيار توزيعة **لينكس (Linux)** المجانية الأنسب لشركات صغيرة ومتوسطة في الدول النامية.md": "rtl",
-    "content/posts/كيف يعلّمنا لينكس فلسفة “الحدّ الأدنى الرقمي”.md": "rtl"
+    "content/posts/كيف يعلّمنا لينكس فلسفة “الحدّ الأدنى الرقمي”.md": "rtl",
+    "content/posts/دليل استراتيجي لاختيار توزيعات لينكس للخوادم.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
