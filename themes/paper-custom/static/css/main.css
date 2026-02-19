@@ -62,9 +62,10 @@ body {
 }
 /* Add this tagline style */
 .site-tagline {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--text-color-light);
+  font-family: 'b-piramooz-b1', sans-serif;
+  font-size: 0.98rem;
+  font-style: normal;
+  color: #C48732;
   margin-top: 0.5rem;
   line-height: 1.5;
   max-width: 600px;
