@@ -1,8 +1,12 @@
 {
   "rightToLeft": true,
+<<<<<<< HEAD
   "showInlineTitle": true,
   "propertiesInDocument": "hidden",
   "readableLineLength": false,
   "tabSize": 6,
   "strictLineBreaks": false
+=======
+  "propertiesInDocument": "hidden"
+>>>>>>> ae61447 (vault backup: 2026-03-06 01:58:34)
 }
