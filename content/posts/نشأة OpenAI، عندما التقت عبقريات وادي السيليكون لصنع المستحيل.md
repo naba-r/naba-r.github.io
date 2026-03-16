@@ -2,8 +2,8 @@
 title: نشأة OpenAI، عندما التقت عبقريات وادي السيليكون لصنع المستحيل
 tags:
   - AI
-draft: true
-date: 2026-11-05
+draft: false
+date: 2025-11-05
 ---
 
 

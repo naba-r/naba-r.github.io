@@ -3,7 +3,8 @@
   "enabledCssSnippets": [],
   "theme": "moonstone",
   "accentColor": "#d2c465",
-  "textFontFamily": "Dubai,FiraCode Nerd Font",
-  "monospaceFontFamily": "FiraCode Nerd Font Mono",
-  "baseFontSize": 18
+  "textFontFamily": "Dubai",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono,Dubai",
+  "baseFontSize": 18,
+  "interfaceFontFamily": "Adwaita Sans"
 }
