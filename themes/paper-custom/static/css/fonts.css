@@ -23,3 +23,17 @@
   font-style: normal;
   font-display: swap;
 }
+/* Royal dark red ONLY for نبر site logo */
+.site-title,
+.site-title a,
+.brand-title,
+header .title {
+  color: #8B0000 !important;  /* Royal dark red */
+  font-family: 'b-piramooz-b1' !important;
+}
+
+/* Post titles/h1/h2 stay normal color */
+h1, h2, h3, .post-title,
+article h1, article h2 {
+  color: inherit !important;
+}
