@@ -12,6 +12,9 @@
 <!-- END naba-r GA4 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  {{ partial "seo_schema.html" . }}
+  
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <link rel="stylesheet" href="{{ "css/fonts.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
