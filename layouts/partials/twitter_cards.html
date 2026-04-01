@@ -1,0 +1,10 @@
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@nabar_linux">
+<meta name="twitter:creator" content="@nabar_linux">
+<meta name="twitter:title" content="{{ .Title }}">
+{{ if .Description }}
+<meta name="twitter:description" content="{{ .Description }}">
+{{ else }}
+<meta name="twitter:description" content="{{ .Summary | plainify | truncate 160 }}">
+{{ end }}
