@@ -1,6 +1,6 @@
 ignoreLogs = ['warning-goldmark-raw-html']
 
-baseURL = "https://naba-r.github.io/"
+baseURL = "https://naba-r.dev/"
 languageCode = "ar"
 title = "نَــبَــرَ"
 theme = "paper-custom"
