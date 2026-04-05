@@ -12,7 +12,7 @@ theme = "paper-custom"
   direction = "rtl"
   disableHLJS = false
   customCSS = ["css/rtl.css"]
-
+  favicon = "favicon.ico"
 
 [permalinks]
   posts = "/:title/"
