@@ -5,7 +5,7 @@
   "@type": "{{ if .IsHome }}WebSite{{ else }}BlogPosting{{ end }}",
   {{ if .IsHome }}
   "name": "{{ .Site.Title }}",
-  "url": "{{ .Site.BaseURL }}"
+  "url": {{ "/" | absURL | jsonify }}
   {{ else }}
   "headline": "{{ .Title | plainify }}",
   "description": "{{ .Description | plainify }}",

@@ -16,6 +16,8 @@
   {{ partial "seo_schema.html" . }}
   
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  
   <link rel="stylesheet" href="{{ "css/fonts.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
   <link rel="stylesheet" href="{{ "css/rtl.css" | absURL }}">
@@ -28,7 +30,7 @@
   <div class="container">
     <header class="header">
       <div class="header-content">
-        <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1><p class="site-tagline"><br>
+        <h1 class="site-title"><a href="{{ "/" | absURL }}">{{ .Site.Title }}</a></h1><p class="site-tagline"><br>
                                       نُــبَـرِزُ الخَـطَّ، فَيَـتَجَـلَّى البَـيَـانُ   </p>
 
         {{ if .Site.Menus.main }}
@@ -51,7 +53,7 @@
     <footer class="footer">
        <p>
     &copy; {{ now.Year }} {{ .Site.Title }}
-    <a href="/index.xml" aria-label="RSS Feed" class="rss-link" title="RSS Feed" style="margin-left: 8px; vertical-align: middle;">
+    <a href="{{ "index.xml" | absURL }}" aria-label="RSS Feed" class="rss-link" title="RSS Feed" style="margin-left: 8px; vertical-align: middle;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="#F28C28" xmlns="http://www.w3.org/2000/svg">
         <circle cx="6.18" cy="17.82" r="2.18"/>
         <path d="M4 10.56a9.44 9.44 0 0 1 9.44 9.44" stroke="#F28C28" stroke-width="2" fill="none"/>
