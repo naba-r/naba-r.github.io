@@ -1,4 +1,7 @@
 {
   "propertiesInDocument": "hidden",
-  "rightToLeft": true
+  "rightToLeft": true,
+  "showInlineTitle": false,
+  "spellcheck": false,
+  "tabSize": 6
 }

@@ -3,7 +3,7 @@
     "content/posts/حكاية التوزيعة من القلب إلى التفاصيل.md": "rtl",
     "content/posts/كيف يحميك Snapper من الكوارث؟ دليل المبتدئين لنظام ملفات Btrfs.md": "auto",
     "content/posts/محطة الكتابة.md": "rtl",
-    "content/posts/النافذة الأولى حكاية الإنسان الذي علّم لينكس أن يرى.md": "auto",
+    "content/posts/النافذة الأولى حكاية الإنسان الذي علّم لينكس أن يرى.md": "rtl",
     "content/posts/اختيار توزيعة **لينكس (Linux)** المجانية الأنسب لشركات صغيرة ومتوسطة في الدول النامية.md": "rtl",
     "content/posts/كيف يعلّمنا لينكس فلسفة “الحدّ الأدنى الرقمي”.md": "rtl",
     "content/posts/دليل استراتيجي لاختيار توزيعات لينكس للخوادم.md": "rtl",
@@ -11,8 +11,12 @@
     "content/posts/ﻻ تصبح فريدًا، لماذا يتفوق المتصفح القياسي على الحلول الجاهزة.md": "rtl",
     "content/posts/كيف تتعلم الأنظمة من الجرح.md": "rtl",
     "content/posts/لماذا يتقاتل مستخدمو لينكس حول برنامج لم تسمع به من قبل؟.md": "rtl",
-    "content/posts/من تلوّث الحالة إلى الأنظمة الذرّية.md": "rtl",
-    "content/posts/لوحات المفاتيح واللغات.md": "rtl"
+    "content/posts/SUSE Linux تاريخ الحرباء الخضراء.md": "rtl",
+    "content/posts/لم تعد الثغرات هي المشكلة، هكذا يكسر الذكاء الاصطناعي \"الثقة\".md": "rtl",
+    "content/posts/عشرة أشياء ستُحب أن تعرفها قبل أول تثبيت لينكس.md": "rtl",
+    "content/posts/حُرّاسُ الأبواب ورُوحِ لينكس.md": "rtl",
+    "content/posts/ثلاثة تمردات.md": "rtl",
+    "content/posts/من تلوّث الحالة إلى الأنظمة الذرّية.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
