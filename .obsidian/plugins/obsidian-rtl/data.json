@@ -16,7 +16,8 @@
     "content/posts/عشرة أشياء ستُحب أن تعرفها قبل أول تثبيت لينكس.md": "rtl",
     "content/posts/حُرّاسُ الأبواب ورُوحِ لينكس.md": "rtl",
     "content/posts/ثلاثة تمردات.md": "rtl",
-    "content/posts/من تلوّث الحالة إلى الأنظمة الذرّية.md": "rtl"
+    "content/posts/من تلوّث الحالة إلى الأنظمة الذرّية.md": "rtl",
+    "content/posts/دليل فهم مديري الحزم في لينكس.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
