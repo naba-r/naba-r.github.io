@@ -18,8 +18,10 @@
     "content/posts/ثلاثة تمردات.md": "rtl",
     "content/posts/من تلوّث الحالة إلى الأنظمة الذرّية.md": "rtl",
     "content/posts/الرجل الذي سار وحده. لماذا أصبح Slackware عبئًا على مستخدمه؟.md": "rtl",
-    "content/posts/أفضل 10 ألعاب مجانية على لينكس.md": "rtl",
-    "Untitled 1.md": "rtl"
+    "Untitled.md": "rtl",
+    "content/posts/كيف تفهم مديري الحزم في لينكس بدل أن تحفظ أوامرهم.md": "rtl",
+    "content/posts/توزيعات لينكس المخفية التي ترفض الاختفاء.md": "rtl",
+    "content/posts/هل يمكن اللعب على لينكس؟ أفضل الألعاب المجانية التي تعمل بدون مشاكل.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
