@@ -23,10 +23,10 @@
     "content/posts/تيرا Tera مشغل راديو من سطر الأوامر على لينكس.md": "rtl",
     "content/posts/توزيعات لينكس المخفية التي ترفض الاختفاء.md": "rtl",
     "content/posts/لماذا لا تعني كثرة الاستشهادات الحقيقة؟ فهم مصادر بحث الذكاء الاصطناعي.md": "rtl",
-    "content/posts/حوّل الكمبيوتر القديم إلى خادم منزلي. دليل لينكس عملي شامل.md": "rtl",
     "content/posts/الطابعات والماسحات الضوئية في لينكس.md": "rtl",
     "content/posts/كيف جعلت الحاويات نظام التشغيل يعمل في الخلفية؟.md": "rtl",
-    "content/posts/ماذا سأفقد إذا انتقلت من Tumbleweed إلى Leap؟.md": "rtl"
+    "content/posts/ماذا سأفقد إذا انتقلت من Tumbleweed إلى Leap؟.md": "rtl",
+    "content/posts/حوّل الكمبيوتر القديم إلى خادم منزلي.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
