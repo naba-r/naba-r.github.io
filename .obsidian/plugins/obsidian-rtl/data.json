@@ -26,7 +26,8 @@
     "content/posts/الطابعات والماسحات الضوئية في لينكس.md": "rtl",
     "content/posts/كيف جعلت الحاويات نظام التشغيل يعمل في الخلفية؟.md": "rtl",
     "content/posts/ماذا سأفقد إذا انتقلت من Tumbleweed إلى Leap؟.md": "rtl",
-    "content/posts/حوّل الكمبيوتر القديم إلى خادم منزلي.md": "rtl"
+    "content/posts/حوّل الكمبيوتر القديم إلى خادم منزلي.md": "rtl",
+    "content/posts/أنظمة ملفات لينكس حكاية الهندسة والمال والإنسان.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
