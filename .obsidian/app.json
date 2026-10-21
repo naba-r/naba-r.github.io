@@ -3,5 +3,9 @@
   "rightToLeft": true,
   "showInlineTitle": false,
   "spellcheck": false,
-  "tabSize": 6
+  "tabSize": 6,
+  "spellcheckDictionary": [
+    "والأتمتة",
+    "صافرة"
+  ]
 }
