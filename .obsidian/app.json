@@ -6,6 +6,8 @@
   "tabSize": 6,
   "spellcheckDictionary": [
     "والأتمتة",
-    "صافرة"
-  ]
+    "صافرة",
+    "وأكواد"
+  ],
+  "showLineNumber": false
 }
