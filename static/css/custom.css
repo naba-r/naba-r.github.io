@@ -34,3 +34,7 @@
   border-radius: 5px;
   overflow-x: auto;
 }
+
+/* Respect Markdown column alignment (:---: / ---: / :---) */
+[lang="ar"] table th[style*="center"], [lang="ar"] table td[style*="center"] { text-align: center !important; }
+[lang="ar"] table th[style*="left"],   [lang="ar"] table td[style*="left"]   { text-align: left !important; }
