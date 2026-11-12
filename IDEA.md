@@ -1,3 +1,6 @@
+---
+tags:
+---
 # IDEA.md — نَـبَـرَ Blog Maintenance
 
 ## Project purpose
@@ -39,9 +42,9 @@ The blog publishes Arabic tutorials, guides, and technical articles about Linux.
 ## Design
 - Arabic, right-to-left (RTL) interface
 - Minimal, flat, clean design
-- Primary color: #F28C28 (orange)
-- Light orange: #e67e00
-- Background: #faf9f6
+- Primary color: F28C28 (orange)
+- Light orange: e67e00
+- Background: faf9f6
 - Title font: B Piramooz B1
 - Body font: Dubai Regular
 - Code font: Fira Code
